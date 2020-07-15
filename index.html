@@ -6,6 +6,22 @@
   <title>Home Improvement</title>
 </head>
 <body>
-  <p>Hello World</p>
+
+  <div class="container">
+    <img src="http://placehold.it/400x200&amp;text=1" />
+    <img src="http://placehold.it/400x200&amp;text=2" />
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="jquery.event.move.js"></script>
+  <script src="jquery.twentytwenty.js"></script>
+  <script>
+    $(function () {
+
+        $(".container").each(function() {
+          $(this).twentytwenty();
+        });
+      });
+  </script>
+  <link rel="stylesheet" href="twentytwenty.css" type="text/css" media="screen" />
 </body>
 </html>
